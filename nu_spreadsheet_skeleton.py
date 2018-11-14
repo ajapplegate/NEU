@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-NU FP Skeleton
+NU Initial Skeleton
 
 Created on Tue Nov 13 07:37:42 2018
 
