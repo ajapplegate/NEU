@@ -34,15 +34,14 @@ def import_excel():
     if ncols == 0 | nrows == 0:
         messagebox.showerror("File format error", "File is empty！")
         return
-    if ncols % 2 == 1:
-        messagebox.showerror("Wrong file format", "Excel must be an even column！")
-        return
     mdict = {}
     for i in range(nrows):
         for j in range(ncols):
             cell = table.cell(i, j).value
             if cell != '':
                 mdict[cell] = mdict.get(cell, 0) + 1
+            elif cell == 0:
+              messagebox.showinfo ("Bad Trial")
     global sortedlist
     sortedlist = sort_by_value(mdict)
     listbox.delete(0, END)
