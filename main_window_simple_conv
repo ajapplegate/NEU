@@ -1,34 +1,8 @@
-/********************************************************************************
-** Form generated from reading UI file 'main window simpleri7352.ui'
-**
-** Created by: Qt User Interface Compiler version 5.9.6
-**
-** WARNING! All changes made in this file will be lost when recompiling UI file!
-********************************************************************************/
+import sys
+from PyQt5.QtWidgets import *
+from PyQt5.QtGui import QIcon
 
-#ifndef MAIN_20_WINDOW_20_SIMPLERI7352_H
-#define MAIN_20_WINDOW_20_SIMPLERI7352_H
-
-#include <QtCore/QVariant>
-#include <QtWidgets/QAction>
-#include <QtWidgets/QApplication>
-#include <QtWidgets/QButtonGroup>
-#include <QtWidgets/QHeaderView>
-#include <QtWidgets/QLabel>
-#include <QtWidgets/QLineEdit>
-#include <QtWidgets/QMainWindow>
-#include <QtWidgets/QMenu>
-#include <QtWidgets/QMenuBar>
-#include <QtWidgets/QPushButton>
-#include <QtWidgets/QSpacerItem>
-#include <QtWidgets/QStatusBar>
-#include <QtWidgets/QTableView>
-#include <QtWidgets/QVBoxLayout>
-#include <QtWidgets/QWidget>
-
-QT_BEGIN_NAMESPACE
-
-class Ui_MainWindow
+class Example(MainWindow):
 {
 public:
     QAction *action_Open;
