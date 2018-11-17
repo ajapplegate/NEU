@@ -1,0 +1,134 @@
+/********************************************************************************
+** Form generated from reading UI file 'main window simpleri7352.ui'
+**
+** Created by: Qt User Interface Compiler version 5.9.6
+**
+** WARNING! All changes made in this file will be lost when recompiling UI file!
+********************************************************************************/
+
+#ifndef MAIN_20_WINDOW_20_SIMPLERI7352_H
+#define MAIN_20_WINDOW_20_SIMPLERI7352_H
+
+#include <QtCore/QVariant>
+#include <QtWidgets/QAction>
+#include <QtWidgets/QApplication>
+#include <QtWidgets/QButtonGroup>
+#include <QtWidgets/QHeaderView>
+#include <QtWidgets/QLabel>
+#include <QtWidgets/QLineEdit>
+#include <QtWidgets/QMainWindow>
+#include <QtWidgets/QMenu>
+#include <QtWidgets/QMenuBar>
+#include <QtWidgets/QPushButton>
+#include <QtWidgets/QSpacerItem>
+#include <QtWidgets/QStatusBar>
+#include <QtWidgets/QTableView>
+#include <QtWidgets/QVBoxLayout>
+#include <QtWidgets/QWidget>
+
+QT_BEGIN_NAMESPACE
+
+class Ui_MainWindow
+{
+public:
+    QAction *action_Open;
+    QAction *action_Exit;
+    QAction *actionNew;
+    QWidget *centralwidget;
+    QVBoxLayout *verticalLayout;
+    QLabel *label;
+    QLineEdit *lineEdit;
+    QPushButton *pushButton;
+    QSpacerItem *horizontalSpacer;
+    QTableView *tableView;
+    QMenuBar *menubar;
+    QMenu *menu_File;
+    QStatusBar *statusbar;
+
+    void setupUi(QMainWindow *MainWindow)
+    {
+        if (MainWindow->objectName().isEmpty())
+            MainWindow->setObjectName(QStringLiteral("MainWindow"));
+        MainWindow->resize(458, 326);
+        action_Open = new QAction(MainWindow);
+        action_Open->setObjectName(QStringLiteral("action_Open"));
+        action_Exit = new QAction(MainWindow);
+        action_Exit->setObjectName(QStringLiteral("action_Exit"));
+        actionNew = new QAction(MainWindow);
+        actionNew->setObjectName(QStringLiteral("actionNew"));
+        centralwidget = new QWidget(MainWindow);
+        centralwidget->setObjectName(QStringLiteral("centralwidget"));
+        verticalLayout = new QVBoxLayout(centralwidget);
+        verticalLayout->setObjectName(QStringLiteral("verticalLayout"));
+        label = new QLabel(centralwidget);
+        label->setObjectName(QStringLiteral("label"));
+        QFont font;
+        font.setPointSize(13);
+        label->setFont(font);
+
+        verticalLayout->addWidget(label);
+
+        lineEdit = new QLineEdit(centralwidget);
+        lineEdit->setObjectName(QStringLiteral("lineEdit"));
+        QFont font1;
+        font1.setPointSize(10);
+        lineEdit->setFont(font1);
+
+        verticalLayout->addWidget(lineEdit);
+
+        pushButton = new QPushButton(centralwidget);
+        pushButton->setObjectName(QStringLiteral("pushButton"));
+
+        verticalLayout->addWidget(pushButton);
+
+        horizontalSpacer = new QSpacerItem(437, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
+
+        verticalLayout->addItem(horizontalSpacer);
+
+        tableView = new QTableView(centralwidget);
+        tableView->setObjectName(QStringLiteral("tableView"));
+
+        verticalLayout->addWidget(tableView);
+
+        MainWindow->setCentralWidget(centralwidget);
+        menubar = new QMenuBar(MainWindow);
+        menubar->setObjectName(QStringLiteral("menubar"));
+        menubar->setGeometry(QRect(0, 0, 458, 21));
+        menu_File = new QMenu(menubar);
+        menu_File->setObjectName(QStringLiteral("menu_File"));
+        MainWindow->setMenuBar(menubar);
+        statusbar = new QStatusBar(MainWindow);
+        statusbar->setObjectName(QStringLiteral("statusbar"));
+        MainWindow->setStatusBar(statusbar);
+
+        menubar->addAction(menu_File->menuAction());
+        menu_File->addAction(action_Open);
+        menu_File->addAction(actionNew);
+        menu_File->addSeparator();
+        menu_File->addAction(action_Exit);
+
+        retranslateUi(MainWindow);
+
+        QMetaObject::connectSlotsByName(MainWindow);
+    } // setupUi
+
+    void retranslateUi(QMainWindow *MainWindow)
+    {
+        MainWindow->setWindowTitle(QApplication::translate("MainWindow", "MainWindow", Q_NULLPTR));
+        action_Open->setText(QApplication::translate("MainWindow", "&Open", Q_NULLPTR));
+        action_Exit->setText(QApplication::translate("MainWindow", "&Exit", Q_NULLPTR));
+        actionNew->setText(QApplication::translate("MainWindow", "New", Q_NULLPTR));
+        label->setText(QApplication::translate("MainWindow", "Enter Subject Name or ID:", Q_NULLPTR));
+        pushButton->setText(QApplication::translate("MainWindow", "Confirm", Q_NULLPTR));
+        menu_File->setTitle(QApplication::translate("MainWindow", "&File", Q_NULLPTR));
+    } // retranslateUi
+
+};
+
+namespace Ui {
+    class MainWindow: public Ui_MainWindow {};
+} // namespace Ui
+
+QT_END_NAMESPACE
+
+#endif // MAIN_20_WINDOW_20_SIMPLERI7352_H
