@@ -1,0 +1,21 @@
+"""
+attempting an interactive interface for the program
+
+11/17/18 7:46 am
+
+@author: ajapplegate
+"""
+
+from PyQt5.QtWidgets import *
+
+app = QApplication([])
+app.setStyle('Fusion')
+button = QPushButton('Click')
+def on_button_clicked():
+    alert = QMessageBox()
+    alert.setText('Select a File:')
+    alert.exec_()
+
+button.clicked.connect(on_button_clicked)
+button.show()
+app.exec_()
