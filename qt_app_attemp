@@ -7,12 +7,33 @@ attempting an interactive interface for the program
 """
 import sys
 from PyQt5.QtWidgets import *
-from PuQt5.QtGUI import QIcon
+from PyQt5.QtGui import QIcon
 
 app = QApplication(sys.argv) #names application
 
 app.setStyle('Fusion')
 app.setWindowTitle('NU Data Analysis') #labels the window
 app.show()
+
+class Example(QMainWindow): #change from 'Example'
+  
+  def __init__(self):
+    super().__init__()
+    self.initUI()
+    
+  def initUI(self):
+    menubar = self.menuBar()
+    filemenu = menuBar.addMenu('File')
+    
+    impMenu = QMenu('Import', self)
+    impAct = QAction('Import file', self)
+    impMenu.addAction(impAct)
+    
+    newAct = QAction('New file', self)
+    
+    fileMenu.addAction(newAct)
+    fileMenu.addMenu(impMenu)
+    
+    self.show()
 
 sys.exit(app.exec_())
