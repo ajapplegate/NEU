@@ -5,17 +5,14 @@ attempting an interactive interface for the program
 
 @author: ajapplegate
 """
-
+import sys
 from PyQt5.QtWidgets import *
+from PuQt5.QtGUI import QIcon
 
-app = QApplication([])
+app = QApplication(sys.argv) #names application
+
 app.setStyle('Fusion')
-button = QPushButton('Click')
-def on_button_clicked():
-    alert = QMessageBox()
-    alert.setText('Select a File:')
-    alert.exec_()
+app.setWindowTitle('NU Data Analysis') #labels the window
+app.show()
 
-button.clicked.connect(on_button_clicked)
-button.show()
-app.exec_()
+sys.exit(app.exec_())
